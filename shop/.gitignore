@@ -3,4 +3,8 @@
 *.sqlite3
 * .log
 * .pyc
+* venv/
+.vscode
+__pycache__/
+
 
