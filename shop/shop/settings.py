@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-0py=hrgj=*8(^v!!3as2wgl)37o_fle2o!bh*m0t87^jtn=-^t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+]
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
 
 # Application definition
 
@@ -38,9 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.messages', #фреймворк обмена сообщениями
     'django.contrib.staticfiles', #фрейм для управл статистическими файлами
     'shopapp', #созданное приложение в этом проекте
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
