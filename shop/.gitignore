@@ -3,7 +3,7 @@
 *.sqlite3
 * .log
 * .pyc
-* venv/
+venv/
 .vscode
 __pycache__/
 
