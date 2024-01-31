@@ -68,3 +68,13 @@ Traceback (most recent call last):
     raise ImproperlyConfigured(
 django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
 Did you install mysqlclient?
+
+<!-- asgiref==3.7.2
+Django==4.2.2
+load-dotenv==0.1.0
+python-dotenv==1.0.0
+sqlparse==0.4.4
+typing_extensions==4.9.0
+tzdata==2023.4
+python-dotenv
+mysqlclient -->
